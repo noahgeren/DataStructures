@@ -26,9 +26,15 @@ public:
         head = nullptr;
         tail = nullptr;
         length = 0;
+        _current = nullptr;
     }
     ~DoublyLinkedList() {
-
+        Node* current = head;
+        while(current != nullptr){
+            Node* temp = current;
+            current = current->next;
+            delete temp;
+        }
     }
     void add(T value){
         Node* newNode = new Node(value);
