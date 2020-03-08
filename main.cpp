@@ -1,21 +1,15 @@
 #include <iostream>
 
-#include "DoublyLinkedList.h"
+#include "ArrayList.h"
 
 using namespace std;
 
 int main()
 {
-    DoublyLinkedList<int> linkedList;
-    linkedList.add(0);
-    linkedList.add(1);
-    linkedList.add(2);
-    linkedList.add(3);
-    linkedList.add(4);
-    linkedList + 5;
-    linkedList + 6;
-    for(linkedList.begin(); !linkedList.end(); linkedList++){
-        cout << *linkedList << endl;
-    }
+    ArrayList<int> list;
+    list + 0;
+    list + 1;
+    list + 2;
+    list.print();
     return 0;
 }
