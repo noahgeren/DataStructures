@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+bin/*
+.DS_Store
+DataStructures.layout
+DataStructures.cbp
+DataStructures.depend
