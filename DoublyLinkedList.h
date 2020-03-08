@@ -70,6 +70,9 @@ public:
         return length;
     }
     T get(size_t n){
+        if(n < 0 || n > length - 1) {
+            throw out_of_range("Out of range.");
+        }
         int inc = 1;
         Node* current = head;
         size_t i = 0;
