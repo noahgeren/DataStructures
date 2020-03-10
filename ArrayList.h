@@ -17,7 +17,7 @@ public:
         values = new T[capacity];
     }
     ~ArrayList() {
-        delete values;
+        delete[] values;
     }
     void operator+(T value) {
         add(value);
@@ -28,7 +28,7 @@ public:
             capacity = (capacity * 3)/2 + 1;
             values = new T[capacity];
             copy(oldValues, oldValues + length, values);
-            delete oldValues;
+            delete[] oldValues;
         }
         values[length++] = value;
     }
